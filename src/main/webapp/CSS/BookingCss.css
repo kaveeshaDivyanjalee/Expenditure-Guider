@@ -1,0 +1,308 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+body{
+    
+    margin: 0; 
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+
+    
+}
+
+nav{
+    
+    position: relative;
+    padding: 5px 12px;
+    width: auto;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    
+    color:#006064;
+    
+
+
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding-top: 0px;
+
+}
+
+nav a:hover{
+    background-color: white;
+    color: 00072D;
+    box-shadow:0 0 20px white ;
+    cursor: pointer;
+    
+}
+nav a:active{
+    background-color: white;
+    color: 00072D;
+    box-shadow:0 0 20px white ;
+    cursor: pointer;
+}
+.User img{
+    padding-top: 3px;
+}
+.book-Content{
+    display: flex;
+    flex-direction: row;
+}
+.book-Content .title{
+
+    color:#006064;
+    text-align: center;
+    font-family: 'Abril Fatface';
+    font-size: 20px;
+    letter-spacing: 5px;
+    text-shadow: 2px;
+
+}
+.box{
+    width: fit-content;
+    height: 100vh;
+    background-color: rgba(255,255,255, 0.6);
+    margin: 30px;
+    position: relative;
+    text-align: left;
+    z-index: 1;
+    opacity: 0;
+    left: -500px;
+    pointer-events: none;
+    transition: 0.3s;
+}
+.active.box{
+    opacity: 1;
+    left: 0;
+    pointer-events: fill;
+}
+.menu_icon_box{
+    z-index: 2;
+    width:fit-content;
+    height: auto;
+    background-color:#fff;
+    margin: 25px;
+    position: absolute;
+    border-radius: 4px;
+    cursor: pointer;
+    
+}
+.line1,.line2,.line3{
+    width: 40px;
+    height: 4px;
+    background-color: #000;
+    border-radius: 50px;
+    margin: 4px 5px;
+    transition: 0.2s;
+
+}
+.active .line1{
+    transform: translate(0px,15px)rotate(45deg);
+}
+.active .line2{
+    opacity: 0;
+}
+.active .line3{
+    transform: translate(0px,-15px)rotate(-45deg);
+}
+ div .nav{
+    padding-top: 80px;
+}
+div ul{
+    margin: 0px 30px;
+
+}
+ div ul li{
+    list-style: none;
+    margin-bottom: 30px;
+    transition: 0.2s;
+}
+div ul li:hover{
+   background-color: #c6c6c6;
+   border-radius: 8px;
+}
+ div ul li a{
+    color: #000;
+    font-size: 20px;
+    padding: 8px 20px;
+    display: block;
+    text-decoration: none;
+}
+.title{
+    background-color:rgba(178,190, 181, 0.5);
+    padding: 30px;
+    border-radius: 5px;
+    font-weight: normal;
+    position: relative;
+    max-width: 700px;
+    margin-top: 2%;
+}
+.title .form-sec{
+    font-weight: normal;
+    font-family:'Times New Roman', Times, serif;
+    color: #006064;
+}
+.btn{
+    margin-top: 8%;
+    margin-left: 2%;
+    width: 100%;
+    
+}
+.btn button{
+    background-color: #006064;
+    border: none;
+    padding: 5px;
+    width: 400px;
+    color: #fff;
+}
+
+.form-sec {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex: 1; 
+}
+
+form select{
+    width: 100%; 
+    max-width: 300px;
+    padding: 8px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: none;
+    background: rgba(255, 255, 255, 0.6);
+}
+form [type="text"], input[type="email"], input[type="date"],input[type="radio"],select{
+    width: 100%; /* You can adjust this value */
+    max-width: 300px; 
+    padding: 8px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: none;
+    background: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    flex: 1;
+    color:#003366; 
+}
+form .radio-group{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:10px;
+    height: 45px;
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+form .radio-group input[type=radio]{
+    width:15px;
+}
+form p{
+    font-weight: bold;
+    margin-top: 5px;
+}
+form .inputField{
+    width: calc(100%/2-20px);
+}
+form .Accomadation{
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    margin-left: 10px;
+}
+form .label{
+    text-align: left;
+}
+.message {
+    font-family:'Abril Fatface';
+    text-align: center;
+    margin-top: 10%;
+    margin-left: 10%;
+    color: navy;
+}
+.pay a{
+    text-decoration: none;
+}
+.pay button{
+    background-color: rgba(0,0,0,0.5);
+    border: none;
+    width: 200px;
+    height: 20px;
+}
+.review{
+    color: dark teal;
+}
+.bookDetail{
+    margin-top: 6%;
+}
+.response {
+    display: flex;
+    gap:10px;
+    width: 100%;
+    color: dark teal;
+}
+
+.response input{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100px;
+    color: navy;
+}
+.response form{
+    gap:10px;
+}
+.response label{
+    color: whitesmoke;
+}
+table{
+    background-color: rgba(255,255,255,0.6);
+    padding: 5px;
+}
+table th{
+    color: teal;
+}
+table td{
+    padding: 10px;
+}
+.response button{
+    height: 35px;
+    background-color: rgba(255,255,255,0.5);
+    border: none;
+    border-radius: 4px;
+}
+.response img{
+    width: 100%;
+    height: 12px;
+}
+.tourLis{
+	display:flex;
+	flext-direction:column;
+	
+	
+}
+.tourLis h2{
+	color:#006064;
+}
+.Detail-main{
+	display:flex;
+	flext-direction:row;
+	paddding-left:10px;
+}
+
+

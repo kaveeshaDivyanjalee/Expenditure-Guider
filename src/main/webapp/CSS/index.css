@@ -1,0 +1,357 @@
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins"sans-serif;
+}
+
+/*body{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-color: #f4f4f4;
+}*/
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('images\background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+
+header {
+  margin: 0;
+}
+nav {
+  position: relative;
+  padding: 5px 12px;
+  width: auto;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  background-color: 00072D;
+  color: white;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding-top: 0px;
+}
+nav ul {
+  margin: 30px;
+  list-style-type: none;
+  display: flex;
+  gap: 3rem;
+  justify-content: space-around;
+}
+nav ul a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  text-align: center;
+}
+
+nav a:hover {
+  background-color: white;
+  color: 00072D;
+  box-shadow: 0 0 20px white;
+  cursor: pointer;
+}
+nav a:active {
+  background-color: white;
+  color: 00072D;
+  box-shadow: 0 0 20px white;
+  cursor: pointer;
+}
+.User img {
+  padding-top: 3px;
+}
+
+.paymentMethod {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.paymentMethod img {
+  width: 100%;
+  height: 100%;
+  padding-left: 5px;
+  padding-top: 20%;
+}
+footer ul {
+  margin-top: 1%;
+  margin-right: 25%;
+  margin-bottom: 10%;
+}
+footer {
+  background-color: 00072D;
+}
+.details1 {
+  margin-left: 12%;
+}
+.subDet1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.subDet1 a {
+  text-decoration: none;
+  color: white;
+}
+
+.subDet1 span {
+  padding: 0 10px;
+  color: white;
+}
+.details1 h2 {
+  padding-top: 1%;
+  padding-left: 42%;
+  color: #f2f7f4;
+  font-family: "Cedarville Cursive", cursive;
+}
+#contactlink {
+  text-align: center;
+  margin: 0 auto;
+}
+.fa {
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid white;
+  border-radius: 50px;
+}
+
+/*Search Result Styles*/
+.Result {
+  margin: 3% 6% 10% 6%;
+  padding: 2% 3% 2% 3%;
+}
+.Detail-main {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+
+  padding: 2% 3% 2% 3%;
+  background-color: #f2f7f4;
+}
+.Detail-main::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background-color: dodgerblue;
+  z-index: -1;
+}
+.Detail-main::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background-color: dodgerblue;
+  z-index: -1;
+  filter: blur(40px);
+}
+
+.search-info {
+  background-color: #f2f7f4;
+}
+
+.profile_container {
+  position: relative;
+}
+.profile_selector {
+  position: absolute;
+  top: 20px;
+  cursor: pointer;
+  right: 20px;
+}
+
+.pro {
+  width: 50px;
+  border-radius: 50%;
+}
+
+/* profile create */
+
+.create_container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.create_form {
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
+    rgb(209, 213, 219) 0px 0px 0px 1px inset;
+  padding: 10px;
+}
+
+.input_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 10px;
+}
+
+.direct_input{
+    padding: 10px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    /* width: 260px; */
+}
+
+/* //credit css */
+.credit_container {
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100vh;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    offset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .credito {
+    background-color: #fff;
+    width: 80vw;
+    height: 95vh;
+    padding: 20px;
+    position: relative;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .buttoner {
+    position: absolute;
+    bottom: 0px;
+    padding: 20px;
+    width: 100%;
+  }
+  .hj {
+    padding: 10px;
+    width: 100%;
+    background-color: #333;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 400;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+  }
+  
+  .inputer {
+    display: flex;
+    flex-direction: column;
+  
+    gap: 5px;
+  }
+  
+  .bn {
+    margin-bottom: 20px;
+  }
+  
+  .input_section {
+    padding: 12px 5px;
+    margin: 0px 0 5px 0;
+    outline: none;
+    border: 1px solid #eee;
+  }
+  .fo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  .label {
+    margin: 2px 0;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    text-transform: capitalize;
+  }
+  
+  .bo {
+    padding: 20px;
+    border: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    margin-top: 41px;
+  }
+  
+  .credit_img {
+    width: 250px;
+    /* height: 100%; */
+    object-fit: contain;
+  }
+  
+  /* online form   */
+  .online_form {
+    width: fit-content;
+    background-color: #fff;
+    padding: 40px 40px;
+    overflow:scroll;
+    height:90vh;
+    border-radius: 10px;
+  }
+  
+  .mop{
+  margin:10px 0;
+  display:flex;
+  align-items:flex-end;
+  width:100%
+  
+  }
+  
+  .buttone {
+    margin-top: 20px;
+  }
+  
+  .linee {
+    width: 100%;
+    height: 1px;
+    background-color: #eee;
+    margin: -10px 0px 20px 0;
+  }
+  /* //paypal */
+  .paypal {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  
+  .io{
+    overflow-y: scroll;
+    height: 90vh;
+  }
+  
